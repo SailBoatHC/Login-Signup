@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Login / Sign Up</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__text">Welcome</h2>
+        <nav class="header__nav">
+            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Services</a>
+            <a href="#" class="nav__link">Contact</a>
+            <button id="loginBtn" class="btn nav__btn">Login</button>
+        </nav>
+    </header>
+
+    <div id="loginSection" class="wrapper">
+        <span id="loginClose" class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2 class="form__text">Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input class="form__input" type="text" required>
+                    <label class="form__label email-label" for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <button id="showPasswordBtn" class="btn showpassword icon"><ion-icon name="eye"></ion-icon></button>
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="passwordInput" class="form__input password__input" type="password" required>
+                    <label class="form__label" for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label class="remfor__text">
+                        <input class="remfor__chkbox" type="checkbox">
+                        Remember Me
+                    </label>
+                    <a class="remfor__link" href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn form__submit">Login</button>
+                <div class="login-register">
+                    <p class="log-reg__text">
+                        Don't have an account?
+                        <a href="#" class="reg__link">Sign Up</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!--SIGN UP-->
+        <div class="form-box register">
+            <h2 class="form__text">Sign Up</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input class="form__input" type="text" required>
+                    <label class="form__label">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input class="form__input" type="text" required>
+                    <label class="form__label" for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <button id="showPasswordBtn2" class="btn showpassword icon"><ion-icon name="eye"></ion-icon></button>
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="passwordInput2" class="form__input password__input" type="password" required>
+                    <label class="form__label" for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                 <label class="remfor__text">
+                        <input class="remfor__chkbox" type="checkbox">
+                        I agree to the Terms & Conditions.
+                    </label>
+                </div>
+                <button type="submit" class="btn form__submit">Sign Up</button>
+                <div class="login-register">
+                    <p class="log-reg__text">
+                        Already Have An Account?
+                        <a href="#" class="login__link">Log In</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
